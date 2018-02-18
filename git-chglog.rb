@@ -1,11 +1,14 @@
 require "formula"
 
+REPOSITORY_URL='https://github.com/git-chglog/git-chglog'
+HOMEBREW_GIT_VERSION='0.0.1'
+
 class GitChglog < Formula
-  homepage "https://github.com/git-chglog/git-chglog"
-  url "https://github.com/git-chglog/git-chglog/releases/download/0.0.1/git-chglog_darwin_amd64"
-  sha256 "6b53df62ff4e590961f75520c8a58d4e62c3220971bdd622952e4cdc9a918a20"
-  head "https://github.com/git-chglog/git-chglog.git"
-  version "0.0.1"
+  homepage "#{REPOSITORY_URL}"
+  url "#{REPOSITORY_URL}/releases/download/#{HOMEBREW_GIT_VERSION}/git-chglog_darwin_amd64"
+  sha256 "181524492d68bd41ba4721d59011146c4e121ae5572b29de189fed0a5ef7188a"
+  head "#{REPOSITORY_URL}.git"
+  version "#{HOMEBREW_GIT_VERSION}"
 
   def install
     system "mv", "git-chglog_darwin_amd64", "git-chglog"
