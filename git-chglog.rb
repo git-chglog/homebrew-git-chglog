@@ -1,12 +1,12 @@
 require "formula"
 
 REPOSITORY_URL='https://github.com/git-chglog/git-chglog'
-HOMEBREW_GIT_VERSION='0.0.1'
+HOMEBREW_GIT_VERSION='0.0.2'
 
 class GitChglog < Formula
   homepage "#{REPOSITORY_URL}"
   url "#{REPOSITORY_URL}/releases/download/#{HOMEBREW_GIT_VERSION}/git-chglog_darwin_amd64"
-  sha256 "181524492d68bd41ba4721d59011146c4e121ae5572b29de189fed0a5ef7188a"
+  sha256 "7f92d8ca7630b0111f66735ba331a190d174cda25ebae52a1adedaf25f0d9326"
   head "#{REPOSITORY_URL}.git"
   version "#{HOMEBREW_GIT_VERSION}"
 
