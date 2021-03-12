@@ -5,24 +5,24 @@
 class GitChglog < Formula
   desc "CHANGELOG generator implemented in Go (Golang)."
   homepage "https://godoc.org/github.com/git-chglog/git-chglog"
-  version "0.10.0"
+  version "0.11.0"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.10.0/git-chglog_0.10.0_darwin_amd64.tar.gz"
-    sha256 "d066237b3b1efecd38828c976cfcc65f3c29e0f954eb6fa295fcb35ec3b7e7e5"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.0/git-chglog_0.11.0_darwin_amd64.tar.gz"
+    sha256 "7f59e3c4c22eef7d794588341228f3a89e5bce09bc4bc421c415cc7c044336e3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.10.0/git-chglog_0.10.0_linux_amd64.tar.gz"
-    sha256 "b3e08d302f3179c33b31e158cc566aa82e1bc121e0b0fc2baf6dbbf2166a6d79"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.0/git-chglog_0.11.0_linux_amd64.tar.gz"
+    sha256 "e30f3d4ec1f3ba91c717ec5200b738f18b8d6162067925d05d2d85f34e82d556"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.10.0/git-chglog_0.10.0_linux_armv6.tar.gz"
-    sha256 "f2eea19b4c9d1a7f1f223266a2ebbdc39fdc581821dd4259276c4bf11b93f1c0"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.0/git-chglog_0.11.0_linux_armv6.tar.gz"
+    sha256 "5fc7f9519c8105d94469bb4ed70ff2645d15de52acf4cfdabd401c5ed2256d24"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.10.0/git-chglog_0.10.0_linux_arm64.tar.gz"
-    sha256 "0d9116db6dbd2e279c61c68f6705a323e4751af3bf1735c31868037664355e6a"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.0/git-chglog_0.11.0_linux_arm64.tar.gz"
+    sha256 "f75653b0fbb6bd9eb7ecce4c3cbcaef38bf253c667b54138100004f0911cb87c"
   end
 
   def install
