@@ -5,24 +5,24 @@
 class GitChglog < Formula
   desc "CHANGELOG generator implemented in Go (Golang)."
   homepage "https://godoc.org/github.com/git-chglog/git-chglog"
-  version "0.11.1"
+  version "0.11.2"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.1/git-chglog_0.11.1_darwin_amd64.tar.gz"
-    sha256 "3cc06acbaa105cfceba7a1206cde413bcb3b483ce5428482cf12a9351f3bf7e7"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.2/git-chglog_0.11.2_darwin_amd64.tar.gz"
+    sha256 "b5c73a1a756dcaf5b371fd4139af06d9cad2968f5765d2ba5db935ad076f5b56"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.1/git-chglog_0.11.1_linux_amd64.tar.gz"
-    sha256 "4fdd8510ea37cfe1a21b7f0e1cfe940758b488e31d58c64f10caf693e0c3e2f8"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.2/git-chglog_0.11.2_linux_amd64.tar.gz"
+    sha256 "0437c863d7e52ec4d37e764a0fbc6046523c261f6c8dcf4009c7f36c162ba632"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.1/git-chglog_0.11.1_linux_armv6.tar.gz"
-    sha256 "38cac3826ff3218bd9eae6ef34e4db417651f17275072ba4d37c4a23d06cbcf1"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.2/git-chglog_0.11.2_linux_armv6.tar.gz"
+    sha256 "f24c36fbe248d74b0581e7bbab30d08c23fc733a975119019805ffb78df31fa7"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.1/git-chglog_0.11.1_linux_arm64.tar.gz"
-    sha256 "aaf6c0d6df08045ca5fa515cb15267691687e5269594682311070a18380f4fca"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.11.2/git-chglog_0.11.2_linux_arm64.tar.gz"
+    sha256 "e51ef02d4dc5d5c8826a49f92263cfd1ffb61e50b26fb8452e173e28fe4ed57b"
   end
 
   def install
