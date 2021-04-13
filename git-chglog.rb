@@ -5,28 +5,28 @@
 class GitChglog < Formula
   desc "CHANGELOG generator implemented in Go (Golang)."
   homepage "https://godoc.org/github.com/git-chglog/git-chglog"
-  version "0.14.0"
+  version "0.14.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.0/git-chglog_0.14.0_darwin_amd64.tar.gz"
-    sha256 "70946b7f134a88c03a9a2c3c15ce136cbe3f4aed3a20eb46211265725fdaeb5f"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.1/git-chglog_0.14.1_darwin_amd64.tar.gz"
+    sha256 "49bdf507135726b435a732d0718d69c492be9db5530b5367b69a304c9ab28d91"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.0/git-chglog_0.14.0_darwin_arm64.tar.gz"
-    sha256 "e7d4dd8292e7e724426b52381db8035182472124839ed5dfa68ba48684bc5306"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.1/git-chglog_0.14.1_darwin_arm64.tar.gz"
+    sha256 "d6e1211b7ef89b136f8630b60406599604a99e131712f2c69080f58e4adfe932"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.0/git-chglog_0.14.0_linux_amd64.tar.gz"
-    sha256 "ed65b1c1dad41ca0372ebc86cf4102cdbb3397259461f1c3730c4c61075a618a"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.1/git-chglog_0.14.1_linux_amd64.tar.gz"
+    sha256 "da787394f042603f7baf95183ea3914ac9a840429f5fd5e51caa0ce8848966ce"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.0/git-chglog_0.14.0_linux_armv6.tar.gz"
-    sha256 "3d0faab6db894a61260fe0fd63046e18976c9f31a508538cb0f612003b94f630"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.1/git-chglog_0.14.1_linux_armv6.tar.gz"
+    sha256 "d8b5e0d4e490caefbc8879a3f0db631251a9f586a24757d1e0716f79d0cc886d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.0/git-chglog_0.14.0_linux_arm64.tar.gz"
-    sha256 "baccb3e859e7d34279c010b7afc7137b63d50f20bdd3b90ea9ea9e64fc51b1cc"
+    url "https://github.com/git-chglog/git-chglog/releases/download/v0.14.1/git-chglog_0.14.1_linux_arm64.tar.gz"
+    sha256 "a03c8d2e0c571d364df2c15f1292d12997544d78c94eef2698895dfb98617f69"
   end
 
   def install
